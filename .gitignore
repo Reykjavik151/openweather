@@ -29,6 +29,8 @@ build/
 .gradle
 local.properties
 *.iml
+*.aab
+*.apk
 
 # node.js
 #
@@ -72,6 +74,7 @@ web-build/
 .turbo
 build/**
 
+.env*
 
 .pnp.*
 .yarn/*
@@ -80,3 +83,9 @@ build/**
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Ignore all TypeScript incremental build info
+*.tsbuildinfo
+
+google-services.json
+firebase-service-account.json

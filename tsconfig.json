@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "lib": ["es6"],
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,

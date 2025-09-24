@@ -1,5 +1,5 @@
-import { HomeScreen } from '#features/home/screen';
+import { WeatherScreen } from '#features/weather/screen';
 
 export default function Home() {
-  return <HomeScreen />;
+  return <WeatherScreen />;
 }

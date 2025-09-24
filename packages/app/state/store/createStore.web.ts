@@ -5,8 +5,9 @@ export const createStore = (reducer: Reducer) =>
     reducer,
     devTools: true,
     enhancers: getDefaultEnhancers => getDefaultEnhancers(),
-    // FIXME:
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    middleware: getDefaultMiddleware => getDefaultMiddleware({ thunk: false, serializableCheck: false }),
+    middleware: getDefaultMiddleware =>
+      getDefaultMiddleware({
+        thunk: true,
+        serializableCheck: false,
+      }),
   });

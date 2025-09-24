@@ -14,10 +14,6 @@ export const P = styled(NativeText, 'text-base my-4 font-inter-medium');
  * Components can have defaultProps and styles
  */
 export const H1 = styled(NativeText, 'text-3xl my-4');
-H1.defaultProps = {
-  accessibilityLevel: 1,
-  accessibilityRole: 'header',
-};
 
 /**
  * This is a more advanced component with custom styles and per-platform functionality

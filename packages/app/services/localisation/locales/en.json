@@ -1,4 +1,34 @@
 {
   "welcome": "Welcome",
-  "greeting": "Hello, {{name}}!"
+  "greeting": "Hello, {{name}}!",
+  "weather": {
+    "title": "Weather",
+    "search": {
+      "placeholder": "Search for a city...",
+      "searching": "Searching...",
+      "noResults": "No locations found",
+      "recentSearches": "Recent Searches",
+      "currentLocation": "📍"
+    },
+    "current": {
+      "feelsLike": "Feels like",
+      "humidity": "Humidity",
+      "windSpeed": "Wind Speed",
+      "pressure": "Pressure",
+      "visibility": "Visibility"
+    },
+    "forecast": {
+      "title": "5-Day Forecast",
+      "hourly": "Hourly",
+      "today": "Today",
+      "tomorrow": "Tomorrow"
+    },
+    "empty": {
+      "message": "Search for a location to see weather information"
+    },
+    "error": {
+      "title": "Error",
+      "ok": "OK"
+    }
+  }
 }

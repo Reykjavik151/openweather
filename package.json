@@ -6,6 +6,8 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.3.3",
     "@types/jest": "^29.5.12",
     "@types/react-i18next": "^8.1.0",
     "@typescript-eslint/eslint-plugin": "8.11.0",
@@ -39,6 +41,9 @@
     "web-server:no-cache": "cd apps/next && yarn clear && yarn next",
     "tsc": "tsc --noEmit --skipLibCheck",
     "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "localisation-types": "i18next-resources-for-ts interface -i ./packages/app/services/localisation/locales -o ./@types/localisation-resources.d.ts"
   },
   "resolutions": {

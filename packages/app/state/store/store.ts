@@ -4,12 +4,13 @@ import { combineReducers } from 'redux';
 import { PersistConfig, persistReducer, persistStore } from 'redux-persist';
 import createWebStorage from 'redux-persist/lib/storage/createWebStorage';
 
-import { appSlice } from '#state/slices';
+import { appSlice, weatherSlice } from '#state/slices';
 
 import { createStore } from './createStore';
 
 export const rootReducer = combineReducers({
   app: appSlice.reducer,
+  weather: weatherSlice.reducer,
 });
 
 const createNoopStorage = () => ({
@@ -48,7 +49,7 @@ export const store = createStore(persistedReducer);
 export const persistor = persistStore(store);
 
 // Unсomment this line and re-launch the app to clear persisted cache
-// persistor.purge();
+persistor.purge();
 
 export type RootState = ReturnType<typeof rootReducer>;
 export type AppStore = typeof store;
