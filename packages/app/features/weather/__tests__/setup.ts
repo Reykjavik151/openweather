@@ -1,5 +1,6 @@
 // Test setup file
 import 'react-native-gesture-handler/jestSetup';
+
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 

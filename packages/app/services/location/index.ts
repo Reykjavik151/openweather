@@ -8,11 +8,13 @@ export interface LocationService {
 }
 
 class ExpoLocationService implements LocationService {
+  // eslint-disable-next-line class-methods-use-this
   async requestPermissions(): Promise<boolean> {
     try {
       const { status } = await Location.requestForegroundPermissionsAsync();
       return status === 'granted';
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('Error requesting location permissions:', error);
       return false;
     }
@@ -56,6 +58,7 @@ class ExpoLocationService implements LocationService {
         country: 'Unknown',
       };
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('Error getting current position:', error);
       return null;
     }

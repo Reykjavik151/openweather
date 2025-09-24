@@ -23,6 +23,7 @@ class Document extends NextDocument {
     const { getStyleElement } = AppRegistry.getApplication('Main');
     const styles = [
       <style
+        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: customFontCss }}
         key="style-reset"
       />,
