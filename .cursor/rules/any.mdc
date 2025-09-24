@@ -1,0 +1,11 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Your rule content
+
+Use `Any` instead of `any` type.
+Import `Any` example:
+import { Any } from '#types/any';

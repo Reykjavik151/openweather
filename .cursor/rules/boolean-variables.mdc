@@ -1,0 +1,14 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Your rule content
+
+Any boolean variable should has `is` prefix.
+Examples:
+`const [isLoading, setIsLoading] = useState(false);`
+`const [isVisible, setIsVisible] = useState(false);`
+
+This rule is appliable for props too.

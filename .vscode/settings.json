@@ -1,0 +1,24 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.nodePath": "./node_modules",
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "files.associations": {
+    "bitrise.yml": "plaintext"
+  },
+  "files.trimTrailingWhitespace": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "filewatcher.autoClearConsole": true,
+  "filewatcher.commands": [
+    {
+      "match": "en.json",
+      "isAsync": true,
+      "event": "onFileChange",
+      "vscodeTask": ["workbench.action.tasks.runTask", "Generate localisation types"]
+    }
+  ]
+}

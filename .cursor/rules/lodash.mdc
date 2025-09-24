@@ -1,0 +1,11 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Your rule content
+
+Use `lodash` library instead of default js map/join etc. functions.
+Import it as a default to make import size smaller:
+`import map from 'lodash/map';`

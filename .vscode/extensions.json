@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "wix.vscode-import-cost",
+    "naumovs.color-highlight",
+    "appulate.filewatcher",
+    "bradlc.vscode-tailwindcss",
+    "hediet.vscode-drawio"
+  ]
+}

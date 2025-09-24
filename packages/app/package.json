@@ -1,0 +1,23 @@
+{
+  "version": "0.0.0",
+  "name": "app",
+  "main": "index.ts",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.5.1",
+    "apisauce": "^3.1.0",
+    "i18next": "^23.16.4",
+    "lodash": "^4.17.21",
+    "moti": "latest",
+    "nativewind": "2.0.11",
+    "react-i18next": "^15.1.0",
+    "react-query": "^3.39.3",
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^3.1.0",
+    "solito": "4.4.1"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/lodash": "^4.17.12"
+  }
+}

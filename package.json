@@ -1,0 +1,53 @@
+{
+  "name": "expo-nextjs-boilerplate",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/react-i18next": "^8.1.0",
+    "@typescript-eslint/eslint-plugin": "8.11.0",
+    "@typescript-eslint/parser": "8.11.0",
+    "eslint": "8.57.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "18.0.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-import-resolver-typescript": "3.6.3",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jest": "28.8.3",
+    "eslint-plugin-jsx-a11y": "6.6.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-promise": "7.1.0",
+    "eslint-plugin-react": "7.37.2",
+    "eslint-plugin-react-native": "4.1.0",
+    "eslint-plugin-restrict-imports": "0.0.3",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "i18next-resources-for-ts": "^1.5.0",
+    "jest": "^29.2.1",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.8",
+    "tailwindcss": "3.3.2",
+    "turbo": "^1.4.2",
+    "typescript": "5.3.3"
+  },
+  "scripts": {
+    "native-server": "cd apps/expo && yarn start",
+    "native-server:no-cache": "cd apps/expo && yarn start -- -c",
+    "web-server": "cd apps/next && yarn next",
+    "web-server:no-cache": "cd apps/next && yarn clear && yarn next",
+    "tsc": "tsc --noEmit --skipLibCheck",
+    "lint": "eslint .",
+    "localisation-types": "i18next-resources-for-ts interface -i ./packages/app/services/localisation/locales -o ./@types/localisation-resources.d.ts"
+  },
+  "resolutions": {
+    "metro": "^0.81.0",
+    "metro-resolver": "^0.81.0"
+  },
+  "nohoist": [
+    "**/expo-router",
+    "**/expo-router/**"
+  ],
+  "packageManager": "yarn@3.4.1"
+}

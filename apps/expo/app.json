@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "expo-boilerplate",
+    "slug": "expo-boilerplate",
+    "version": "1.0.0",
+    "scheme": "expo-boilerplate",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "com.beyondcodeline.expoboilerplate"
+    },
+    "android": {
+      "package": "com.beyondcodeline.expoboilerplate"
+    },
+    "assetBundlePatterns": ["**/*", "../next/public/font/**/*"],
+    "plugins": ["expo-font", "expo-router"]
+  }
+}

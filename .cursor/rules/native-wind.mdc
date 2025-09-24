@@ -1,0 +1,10 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Your rule content
+
+Use `nativewind` with `className` everywhere we can.
+Try to avoid `StyleSheet.create` and `styles.container` pattern.

@@ -1,0 +1,12 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Your rule content
+
+Any values with | null should be done in this way
+Correct example:
+`import { Nullable } from '#types/nullable';`
+`Nullable<SOME_VALUE_TYPE>`
