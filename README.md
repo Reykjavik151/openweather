@@ -33,21 +33,12 @@ A comprehensive React Native weather application built with Expo, TypeScript, an
 yarn install
 ```
 
-### 2. Get OpenWeatherMap API Key
+### 2. OpenWeatherMap API Key
 
-1. Visit [OpenWeatherMap API](https://openweathermap.org/api)
-2. Sign up for a free account
-3. Get your API key from the dashboard
+I've used public OpenWeatherMap API Key from the official source for testing purposes.
+So I've hardcoded it.
 
-### 3. Configure Environment Variables
-
-Create a `.env` file in the `apps/expo` directory:
-
-```bash
-EXPO_PUBLIC_OPENWEATHER_API_KEY=your_api_key_here
-```
-
-### 4. Run the Application
+### 3. Run the Application
 
 ```bash
 # Start the development server
